@@ -1,4 +1,7 @@
 <h1>{{ title }}</h1>
-<button (click)="sumar()">+ 1</button>
+<p>
+  La base es <strong>{{ base }}</strong>
+</p>
+<button (click)="updateCounter(base)">+ {{ base }}</button>
 <span>{{ counter }}</span>
-<button (click)="restar()">- 1</button>
+<button (click)="updateCounter(-base)">- {{ base }}</button>
