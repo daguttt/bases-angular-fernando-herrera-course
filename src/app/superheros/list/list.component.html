@@ -7,7 +7,7 @@
 
 <button (click)="removeSuperheroFromList()">Borrar Superhéroe</button>
 
-<div>
+<div *ngIf="removedSuperhero">
   <h3>Superhéroe borrado</h3>
   <small>{{ removedSuperhero }}</small>
 </div>
