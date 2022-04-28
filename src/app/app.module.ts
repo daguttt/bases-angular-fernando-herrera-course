@@ -3,17 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CounterComponent } from './counter.component';
-import { SuperheroComponent } from './superheros/superhero/superhero.component';
-import { ListComponent } from './superheros/list/list.component';
+import { SuperheroesModule } from './superheroes/superheroes.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CounterComponent,
-    SuperheroComponent,
-    ListComponent,
-  ],
-  imports: [BrowserModule],
+  declarations: [AppComponent, CounterComponent],
+  imports: [BrowserModule, SuperheroesModule],
   providers: [],
   bootstrap: [AppComponent],
 })
