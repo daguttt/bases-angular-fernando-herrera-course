@@ -12,9 +12,11 @@ export class ListComponent {
     'Thor',
     'Capitán América',
   ];
+  public removedSuperhero: string = '';
+
   removeSuperheroFromList(): void {
     const temporalSuperheroList = [...this.superheroList];
-    temporalSuperheroList.pop();
+    this.removedSuperhero = temporalSuperheroList.pop() ?? '';
     this.superheroList = temporalSuperheroList;
   }
 }
