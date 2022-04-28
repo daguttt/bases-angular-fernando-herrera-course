@@ -1,1 +1,7 @@
-<p>Listado</p>
+<h2>Listado de Superhéroes</h2>
+<ul>
+  <li *ngFor="let superhero of superheroList; let i = index">
+    {{ i + 1 }} {{ superhero }}
+  </li>
+</ul>
+<button (click)="removeSuperheroFromList()">Borrar Superhéroe</button>
