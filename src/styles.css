@@ -1,5 +1,6 @@
 * {
   font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
   font-weight: 200;
 }
 
@@ -38,4 +39,23 @@ button:focus {
 
 .p-1 {
   padding: 1px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex-grow: 1;
+}
+
+form {
+  width: 100%;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 8px;
 }
