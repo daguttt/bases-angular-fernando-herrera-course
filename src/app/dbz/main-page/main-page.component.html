@@ -5,9 +5,9 @@
     <h3>Personajes</h3>
     <hr />
     <ul>
-      <li>Krilin - 800</li>
-      <li>Goku - 15000</li>
-      <li>Vegeta - 12000</li>
+      <li *ngFor="let character of characterList; let i = index">
+        {{ i }} - {{ character.name }} --> {{ character.power | number }}
+      </li>
     </ul>
   </article>
   <article class="column">
