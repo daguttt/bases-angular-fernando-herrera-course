@@ -21,20 +21,4 @@ export class MainPageComponent {
     name: '',
     power: 0,
   };
-  /**
-   * * **********************************
-   // ! Not neccesary because of [(ngModel)]
-  */
-  // updateNewCharacterName(e: any) {
-  //   this.newCharacter.name = e.target.value;
-  // }
-  addCharacter(e: any) {
-    // Basic Validation
-    if (this.newCharacter.name.trim().length === 0) return;
-    this.characterList.push(this.newCharacter);
-    this.newCharacter = {
-      name: '',
-      power: 0,
-    };
-  }
 }
