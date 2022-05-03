@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { Character } from '../interfaces/dbz.interface';
 import { DbzService } from '../services/dbz.service';
@@ -7,6 +7,8 @@ import { DbzService } from '../services/dbz.service';
   templateUrl: './character-list.component.html',
 })
 export class CharacterListComponent {
-  @Input() characterList: Character[] = [];
+  get characterList(): Character[] {
+    return this.dbzService.characterList;
+  }
   constructor(private dbzService: DbzService) {}
 }

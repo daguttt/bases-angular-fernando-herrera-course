@@ -8,22 +8,8 @@ import { DbzService } from '../services/dbz.service';
   styleUrls: ['./main-page.component.css'],
 })
 export class MainPageComponent {
-  public characterList: Character[] = [
-    {
-      name: 'Goku',
-      power: 15000,
-    },
-    {
-      name: 'Vegeta',
-      power: 8500,
-    },
-  ];
   public newCharacter: Character = {
     name: '',
     power: 0,
   };
-  addNewCharacter(character: Character) {
-    this.characterList.push(character);
-  }
-  constructor(private dbzService: DbzService) {}
 }

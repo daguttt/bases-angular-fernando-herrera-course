@@ -9,12 +9,9 @@
         {{ character.name }} - {{ character.power | number }}
       </li>
     </ul> -->
-    <app-character-list [characterList]="characterList"></app-character-list>
+    <app-character-list></app-character-list>
   </article>
   <article class="column">
-    <app-add-character
-      [newCharacter]="newCharacter"
-      (onNewCharacter)="addNewCharacter($event)"
-    ></app-add-character>
+    <app-add-character [newCharacter]="newCharacter"></app-add-character>
   </article>
 </section>
