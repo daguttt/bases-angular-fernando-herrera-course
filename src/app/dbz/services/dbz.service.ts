@@ -16,7 +16,10 @@ export class DbzService {
   get characterList(): Character[] {
     return [...this._characterList];
   }
-  constructor() {
-    console.log('Servicio inicializado');
+
+  constructor() {}
+
+  addNewCharacter(character: Character) {
+    this._characterList.push(character);
   }
 }

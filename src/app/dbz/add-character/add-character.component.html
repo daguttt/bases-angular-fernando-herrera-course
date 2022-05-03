@@ -1,7 +1,7 @@
 <h3>Agregar</h3>
 <hr />
 <!-- Add Character -->
-<form (ngSubmit)="addCharacter($event)">
+<form (ngSubmit)="addCharacter()">
   <!-- Name -->
   <input
     type="text"
@@ -11,6 +11,7 @@
     [(ngModel)]="newCharacter.name"
   />
   <!-- Power -->
+
   <input
     type="number"
     name="power"
