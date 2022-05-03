@@ -13,8 +13,8 @@
   </article>
   <article class="column">
     <app-add-character
-      [characterList]="characterList"
       [newCharacter]="newCharacter"
+      (onNewCharacter)="addNewCharacter($event)"
     ></app-add-character>
   </article>
 </section>

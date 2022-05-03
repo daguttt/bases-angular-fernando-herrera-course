@@ -21,4 +21,7 @@ export class MainPageComponent {
     name: '',
     power: 0,
   };
+  addNewCharacter(character: Character) {
+    this.characterList.push(character);
+  }
 }
